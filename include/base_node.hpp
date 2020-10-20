@@ -7,16 +7,18 @@ namespace disjoint_set {
 
 template <typename T, class Node>
 class BaseNode {
-private:
-	T value;
+public:
+	T value_;
 	Node *set_;
 
 public:
-	BaseNode(T);
+	BaseNode(T &, Node *);
 };
 
 } // disjoint_set
 
 } // eda
+
+#include "impl/base_node.ipp"
 
 #endif // DISJOINT_SET_BASE_NODE_HPP_
