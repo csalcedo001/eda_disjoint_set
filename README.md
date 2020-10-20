@@ -1,2 +1,2 @@
-# eda_disjoint_sets
-Disjoint sets implementation
+# eda_disjoint_set
+Disjoint set implementation
