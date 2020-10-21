@@ -28,7 +28,7 @@ int main() {
 	cout << disjoint_set.same_set(2, 4) << endl;
 	cout << disjoint_set.same_set(3, 4) << endl;
 
-	disjoint_set.combine(3, 4);
+	disjoint_set.combine(2, 4);
 
 	cout << disjoint_set.same_set(1, 2) << endl;
 	cout << disjoint_set.same_set(1, 3) << endl;
@@ -37,7 +37,7 @@ int main() {
 	cout << disjoint_set.same_set(2, 4) << endl;
 	cout << disjoint_set.same_set(3, 4) << endl;
 
-	disjoint_set.combine(2, 3);
+	disjoint_set.combine(3, 1);
 
 	cout << disjoint_set.same_set(1, 2) << endl;
 	cout << disjoint_set.same_set(1, 3) << endl;

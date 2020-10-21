@@ -20,15 +20,6 @@ void BaseDisjointSet<T, Compare, Node>::insert(T value) {
 template <typename T, class Compare, class Node>
 void BaseDisjointSet<T, Compare, Node>::combine(T value1, T value2) {
 	this->combine(this->node(value1), this->node(value2));
-
-	Node *set1, *set2;
-
-	set1 = this->find(this->node(value1));
-	set2 = this->find(this->node(value2));
-
-	if (set1 == set2) return;
-
-	set1->set_ = set2;
 }
 
 template <typename T, class Compare, class Node>
